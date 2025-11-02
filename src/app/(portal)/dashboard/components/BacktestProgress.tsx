@@ -1,7 +1,8 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { createPortal } from 'react-dom';
 
 interface BacktestProgressProps {
   isOpen: boolean;
@@ -11,6 +12,11 @@ interface BacktestProgressProps {
 }
 
 export default function BacktestProgress({ isOpen, stage, progress, message }: BacktestProgressProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   const getStageIcon = () => {
     if (stage === 'fetching') return '📥';
     if (stage === 'running') return '⚙️';
@@ -23,7 +29,9 @@ export default function BacktestProgress({ isOpen, stage, progress, message }: B
     return '回测完成';
   };
 
-  return (
+  if (!mounted) return null;
+
+  const modalContent = (
     <AnimatePresence>
       {isOpen && (
         <motion.div
@@ -31,7 +39,7 @@ export default function BacktestProgress({ isOpen, stage, progress, message }: B
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-50"
-          style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0 }}
+          style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, margin: 0 }}
         >
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
@@ -80,4 +88,6 @@ export default function BacktestProgress({ isOpen, stage, progress, message }: B
       )}
     </AnimatePresence>
   );
+
+  return createPortal(modalContent, document.body);
 }

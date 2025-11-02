@@ -68,12 +68,13 @@ export default function LiveTradingChart({ symbol, interval, config }: LiveTradi
           },
         });
 
-        // Note: Keltner Channel might not be available by default in TradingView free version
-        // Add ATR as a workaround since Keltner uses ATR
+        // Keltner Channels - 肯特纳通道
         studies.push({
-          id: 'ATR@tv-basicstudies',
+          id: 'KeltnerChannels@tv-basicstudies',
           inputs: {
-            length: config.strategy.indicators.keltner.atrPeriod,
+            length: config.strategy.indicators.keltner.maPeriod,
+            mult: config.strategy.indicators.keltner.atrMultiple,
+            atrLength: config.strategy.indicators.keltner.atrPeriod,
           },
         });
 

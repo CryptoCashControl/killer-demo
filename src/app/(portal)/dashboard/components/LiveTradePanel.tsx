@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import dynamic from 'next/dynamic';
 import CompactStrategyConfig from './CompactStrategyConfig';
+import LiveTradingConnection from './LiveTradingConnection';
 import type { TradingConfig, Signal } from '@/lib/trading/types';
 
 const LiveTradingChart = dynamic(() => import('./LiveTradingChart'), {
@@ -34,6 +35,12 @@ export default function LiveTradePanel({ tradingConfig: initialConfig, onConfigC
   const [isConnecting, setIsConnecting] = useState(false);
   const [connectionError, setConnectionError] = useState<string>('');
 
+  // Trading state
+  const [isTradingActive, setIsTradingActive] = useState(false);
+  const [showConnectionModal, setShowConnectionModal] = useState(false);
+  const [connectionStage, setConnectionStage] = useState<'connecting' | 'authenticating' | 'connected' | 'error'>('connecting');
+  const [connectionMessage, setConnectionMessage] = useState('');
+
   const handleConfigChange = (newConfig: TradingConfig) => {
     setTradingConfig(newConfig);
     if (onConfigChange) {
@@ -41,20 +48,36 @@ export default function LiveTradePanel({ tradingConfig: initialConfig, onConfigC
     }
   };
 
-  // 检查Binance连接状态
-  const checkBinanceConnection = async () => {
-    if (!apiKey || !apiSecret) {
+  // 开始/停止交易
+  const toggleTrading = async () => {
+    if (isTradingActive) {
+      // 停止交易
+      setIsTradingActive(false);
       setBinanceConnected(false);
-      setBinanceStatus('未配置');
-      setConnectionError('请先配置API密钥');
+      setBinanceStatus('已停止');
+      setAutoRefresh(false);
       return;
     }
 
-    setIsConnecting(true);
-    setConnectionError('');
-    setBinanceStatus('连接中...');
+    // 开始交易 - 显示连接modal
+    if (!apiKey || !apiSecret) {
+      setConnectionError('请先配置API密钥');
+      setShowApiConfig(true);
+      return;
+    }
+
+    setShowConnectionModal(true);
+    setConnectionStage('connecting');
+    setConnectionMessage('正在连接到Binance期货服务器...');
 
     try {
+      // Stage 1: Connecting
+      await new Promise(resolve => setTimeout(resolve, 800));
+
+      setConnectionStage('authenticating');
+      setConnectionMessage('正在验证API密钥...');
+
+      // Stage 2: Authenticating
       const response = await fetch('/api/trading/binance-status', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -64,21 +87,41 @@ export default function LiveTradePanel({ tradingConfig: initialConfig, onConfigC
       const data = await response.json();
 
       if (response.ok && data.connected) {
+        // Stage 3: Connected
+        setConnectionStage('connected');
+        setConnectionMessage(`连接成功！账户余额: $${data.balance?.toFixed(2) || '0.00'}`);
         setBinanceConnected(true);
-        setBinanceStatus(`已连接 (余额: $${data.balance?.toFixed(2) || '0.00'})`);
+        setBinanceStatus(`运行中 (余额: $${data.balance?.toFixed(2) || '0.00'})`);
         setConnectionError('');
+
+        // Auto-close modal after 2 seconds and start trading
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        setShowConnectionModal(false);
+        setIsTradingActive(true);
+        setAutoRefresh(true);
       } else {
+        setConnectionStage('error');
+        setConnectionMessage(data.error || '无法连接到Binance服务器，请检查API密钥');
         setBinanceConnected(false);
         setBinanceStatus('连接失败');
-        setConnectionError(data.error || '无法连接到Binance服务器');
+        setConnectionError(data.error || '连接失败');
       }
     } catch (err) {
+      setConnectionStage('error');
+      setConnectionMessage(err instanceof Error ? err.message : '网络错误，请检查网络连接');
       setBinanceConnected(false);
       setBinanceStatus('连接错误');
-      setConnectionError(err instanceof Error ? err.message : '网络错误，请检查网络连接');
-      console.error('Error checking Binance connection:', err);
-    } finally {
-      setIsConnecting(false);
+      setConnectionError(err instanceof Error ? err.message : '网络错误');
+      console.error('Error connecting to Binance:', err);
+    }
+  };
+
+  // Handle connection modal close
+  const handleConnectionModalClose = () => {
+    setShowConnectionModal(false);
+    if (connectionStage === 'connected') {
+      setIsTradingActive(true);
+      setAutoRefresh(true);
     }
   };
 
@@ -86,7 +129,6 @@ export default function LiveTradePanel({ tradingConfig: initialConfig, onConfigC
   const saveApiConfig = () => {
     localStorage.setItem('binance_api_key', apiKey);
     localStorage.setItem('binance_api_secret', apiSecret);
-    checkBinanceConnection();
     setShowApiConfig(false);
   };
 
@@ -96,9 +138,6 @@ export default function LiveTradePanel({ tradingConfig: initialConfig, onConfigC
     const savedSecret = localStorage.getItem('binance_api_secret');
     if (savedKey) setApiKey(savedKey);
     if (savedSecret) setApiSecret(savedSecret);
-
-    // 初始检查连接
-    checkBinanceConnection();
   }, []);
 
   const fetchCurrentSignal = async () => {
@@ -258,11 +297,15 @@ export default function LiveTradePanel({ tradingConfig: initialConfig, onConfigC
           </div>
           <div className="flex gap-2">
             <button
-              onClick={checkBinanceConnection}
-              disabled={isConnecting || !apiKey || !apiSecret}
-              className="px-4 py-2 text-sm bg-black dark:bg-white text-white dark:text-black font-bold border-2 border-black dark:border-white hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              onClick={toggleTrading}
+              disabled={!apiKey || !apiSecret}
+              className={`px-4 py-2 text-sm font-bold border-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${
+                isTradingActive
+                  ? 'bg-red-600 dark:bg-red-500 text-white border-red-600 dark:border-red-500 hover:bg-red-700 dark:hover:bg-red-600'
+                  : 'bg-black dark:bg-white text-white dark:text-black border-black dark:border-white hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white'
+              }`}
             >
-              {isConnecting ? '连接中...' : '测试连接'}
+              {isTradingActive ? '停止交易' : '开始交易'}
             </button>
             <button
               onClick={() => setShowApiConfig(!showApiConfig)}
@@ -332,7 +375,7 @@ export default function LiveTradePanel({ tradingConfig: initialConfig, onConfigC
           实时行情图表
         </h2>
         <p className="text-xs text-gray-600 dark:text-gray-400 mb-4">
-          图表已加载以下策略指标：布林带(BB)、MACD、CCI、SuperTrend、ATR
+          图表已加载以下策略指标：布林带(BB)、肯特纳通道(KC)、MACD、CCI、SuperTrend
         </p>
         <LiveTradingChart
           symbol={tradingConfig.symbol}
@@ -550,6 +593,14 @@ export default function LiveTradePanel({ tradingConfig: initialConfig, onConfigC
           </div>
         </div>
       )}
+
+      {/* Live Trading Connection Modal */}
+      <LiveTradingConnection
+        isOpen={showConnectionModal}
+        stage={connectionStage}
+        message={connectionMessage}
+        onClose={handleConnectionModalClose}
+      />
     </div>
   );
 }

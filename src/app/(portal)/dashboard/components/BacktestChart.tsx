@@ -44,9 +44,16 @@ export default function BacktestChart({ candles, trades, symbol }: BacktestChart
 
     chartRef.current = chart;
 
+    // Check if chart is valid
+    // @ts-ignore - lightweight-charts v5 type definitions may be incomplete
+    if (!chart || typeof chart.addCandlestickSeries !== 'function') {
+      console.error('Chart API error: addCandlestickSeries not available', chart);
+      return;
+    }
+
     // Add candlestick series
-    // Note: Using type assertion because TypeScript definitions may be incomplete
-    const candlestickSeries = (chart as any).addCandlestickSeries({
+    // @ts-ignore - Using type assertion for incomplete TypeScript definitions
+    const candlestickSeries = chart.addCandlestickSeries({
       upColor: '#26a69a',
       downColor: '#ef5350',
       borderVisible: false,
