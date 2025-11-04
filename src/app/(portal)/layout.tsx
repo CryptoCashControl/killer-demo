@@ -6,6 +6,10 @@ import UnifiedNavbar from "@/components/layout/UnifiedNavbar";
 import SplanFooter from "@/components/splan/SplanFooter";
 import SubscriptionNotification from "@/components/custom/SubscriptionNotification";
 import Providers from "@/components/providers/Providers";
+import MouseFollower from "@/components/effects/MouseFollower";
+import ScrollProgress, { BackToTop } from "@/components/effects/ScrollProgress";
+import PageLoader from "@/components/effects/PageLoader";
+import GridBackground from "@/components/effects/GridBackground";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -94,6 +98,10 @@ export default function PortalLayout({
       </head>
       <body suppressHydrationWarning>
         <Providers>
+          <GridBackground />
+          <PageLoader />
+          <MouseFollower />
+          <ScrollProgress />
           <UnifiedNavbar />
           <main className="pt-16">
             <Theme accentColor="gray" scaling="90%" grayColor="slate" appearance="inherit" radius="none">
@@ -101,6 +109,7 @@ export default function PortalLayout({
             </Theme>
           </main>
           <SplanFooter />
+          <BackToTop />
           <SubscriptionNotification />
         </Providers>
       </body>
