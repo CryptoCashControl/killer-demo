@@ -1,9 +1,10 @@
-import Link from 'next/link';
-import { getServerLanguage, generateBilingualMetadata } from '@/lib/getServerLanguage';
+import { getLanguageFromLocale, generateBilingualMetadata } from '@/lib/getServerLanguage';
+import LocaleLink from '@/components/navigation/LocaleLink';
 
 // Generate SEO Metadata
-export async function generateMetadata() {
-  const lang = await getServerLanguage();
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lang = getLanguageFromLocale(locale);
 
   return generateBilingualMetadata(
     '外汇交易教育中心 - 系统化学习外汇交易知识 | FX Killer',
@@ -85,8 +86,9 @@ const courseCategories = [
   }
 ];
 
-export default async function EducationPage() {
-  const lang = await getServerLanguage();
+export default async function EducationPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lang = getLanguageFromLocale(locale);
   const isZh = lang === 'zh';
 
   return (
@@ -173,7 +175,7 @@ export default async function EducationPage() {
                   const isNew = statusText === '新' || statusText === 'New';
 
                   return (
-                    <Link
+                    <LocaleLink
                       key={index}
                       href={isComingSoon ? '#' : `/education/${course.slug}`}
                       className={`block p-4 border-2 border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all group ${
@@ -194,7 +196,7 @@ export default async function EducationPage() {
                           </span>
                         )}
                       </div>
-                    </Link>
+                    </LocaleLink>
                   );
                 })}
               </div>
@@ -239,18 +241,18 @@ export default async function EducationPage() {
               )}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
+              <LocaleLink
                 href="/splan/join-us"
                 className="px-10 py-4 bg-white dark:bg-black text-black dark:text-white font-bold text-lg border-2 border-white dark:border-black hover:bg-transparent hover:text-white dark:hover:bg-transparent dark:hover:text-black transition-all inline-block text-center"
               >
                 {isZh ? '了解培训计划' : 'Learn About Training'}
-              </Link>
-              <Link
+              </LocaleLink>
+              <LocaleLink
                 href="/splan/psychology-test"
                 className="px-10 py-4 bg-transparent text-white dark:text-black font-bold text-lg border-2 border-white dark:border-black hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-all inline-block text-center"
               >
                 {isZh ? '免费心理测评' : 'Free Psychology Test'}
-              </Link>
+              </LocaleLink>
             </div>
           </div>
         </div>
