@@ -16,8 +16,9 @@ export async function generateMetadata() {
   );
 }
 
-export default async function TradingPsychologyPage() {
-  const lang = await getServerLanguage();
+export default async function TradingPsychologyPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lang = getLanguageFromLocale(locale);
   const content = tradingPsychologyContent[lang];
   const isZh = lang === 'zh';
 

@@ -1,9 +1,10 @@
-import { getServerLanguage, generateBilingualMetadata } from '@/lib/getServerLanguage';
+import { getLanguageFromLocale, generateBilingualMetadata } from '@/lib/getServerLanguage';
 import { bollingerBandsContent } from '@/content/education/bollinger-bands.content';
 import EducationPageTemplate from '@/components/education/EducationPageTemplate';
 
-export async function generateMetadata() {
-  const lang = await getServerLanguage();
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lang = getLanguageFromLocale(locale);
 
   return generateBilingualMetadata(
     bollingerBandsContent.zh.title,
@@ -16,8 +17,9 @@ export async function generateMetadata() {
   );
 }
 
-export default async function BollingerBandsPage() {
-  const lang = await getServerLanguage();
+export default async function BollingerBandsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lang = getLanguageFromLocale(locale);
   const content = bollingerBandsContent[lang];
   const isZh = lang === 'zh';
 

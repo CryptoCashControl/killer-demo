@@ -1,9 +1,10 @@
-import { getServerLanguage, generateBilingualMetadata } from '@/lib/getServerLanguage';
+import { getLanguageFromLocale, generateBilingualMetadata } from '@/lib/getServerLanguage';
 import { brokerSelectionContent } from '@/content/education/broker-selection-guide.content';
 import EducationPageTemplate from '@/components/education/EducationPageTemplate';
 
-export async function generateMetadata() {
-  const lang = await getServerLanguage();
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lang = getLanguageFromLocale(locale);
   const content = brokerSelectionContent[lang];
 
   return generateBilingualMetadata(
@@ -17,8 +18,9 @@ export async function generateMetadata() {
   );
 }
 
-export default async function BrokerSelectionGuidePage() {
-  const lang = await getServerLanguage();
+export default async function BrokerSelectionGuidePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lang = getLanguageFromLocale(locale);
   const content = brokerSelectionContent[lang];
   const isZh = lang === 'zh';
 

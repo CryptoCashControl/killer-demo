@@ -1,9 +1,10 @@
-import { getServerLanguage, generateBilingualMetadata } from '@/lib/getServerLanguage';
+import { getLanguageFromLocale, generateBilingualMetadata } from '@/lib/getServerLanguage';
 import { spreadsCommissionsContent } from '@/content/education/spreads-and-commissions.content';
 import EducationPageTemplate from '@/components/education/EducationPageTemplate';
 
-export async function generateMetadata() {
-  const lang = await getServerLanguage();
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lang = getLanguageFromLocale(locale);
   const content = spreadsCommissionsContent[lang];
 
   return generateBilingualMetadata(
@@ -17,8 +18,9 @@ export async function generateMetadata() {
   );
 }
 
-export default async function SpreadsCommissionsPage() {
-  const lang = await getServerLanguage();
+export default async function SpreadsCommissionsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lang = getLanguageFromLocale(locale);
   const content = spreadsCommissionsContent[lang];
   const isZh = lang === 'zh';
 

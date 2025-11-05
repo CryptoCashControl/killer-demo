@@ -1,9 +1,10 @@
-import { getServerLanguage, generateBilingualMetadata } from '@/lib/getServerLanguage';
+import { getLanguageFromLocale, generateBilingualMetadata } from '@/lib/getServerLanguage';
 import { positionSizingContent } from '@/content/education/position-sizing.content';
 import EducationPageTemplate from '@/components/education/EducationPageTemplate';
 
-export async function generateMetadata() {
-  const lang = await getServerLanguage();
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lang = getLanguageFromLocale(locale);
 
   return generateBilingualMetadata(
     positionSizingContent.zh.title,
@@ -16,8 +17,9 @@ export async function generateMetadata() {
   );
 }
 
-export default async function PositionSizingPage() {
-  const lang = await getServerLanguage();
+export default async function PositionSizingPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const lang = getLanguageFromLocale(locale);
   const content = positionSizingContent[lang];
   const isZh = lang === 'zh';
 
