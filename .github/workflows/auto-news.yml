@@ -27,7 +27,7 @@ jobs:
           version: 8
 
       - name: Install dependencies
-        run: pnpm add rss-parser axios dayjs gray-matter
+        run: pnpm install --frozen-lockfile
 
       - name: Generate SEO content
         run: node scripts/seo-content-generator.js
