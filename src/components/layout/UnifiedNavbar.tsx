@@ -117,16 +117,17 @@ export default function UnifiedNavbar() {
           : 'bg-white dark:bg-gray-900'
       } border-b border-gray-200 dark:border-gray-800`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center h-16">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-center justify-between h-16">
           {/* Logo - 靠左 */}
-          <LocaleLink href="/" className="flex items-center group mr-8">
-            <span className="text-2xl"><BrandName /></span>
-          </LocaleLink>
+          <div className="flex items-center space-x-8">
+            <LocaleLink href="/" className="flex items-center group">
+              <span className="text-2xl"><BrandName /></span>
+            </LocaleLink>
 
-          {/* Desktop Navigation - 靠左布局 */}
-          <div className="hidden md:flex items-center space-x-1 flex-1">
-            {navItems.map((item, index) => (
+            {/* Desktop Navigation - 紧跟 Logo */}
+            <div className="hidden md:flex items-center space-x-1">
+              {navItems.map((item, index) => (
               <div
                 key={index}
                 className="relative"
@@ -197,10 +198,11 @@ export default function UnifiedNavbar() {
                 )}
               </div>
             ))}
+            </div>
           </div>
 
-          {/* Right Side Actions (Desktop) - 保持在右边 */}
-          <div className="hidden md:flex items-center gap-3 ml-auto">
+          {/* Right Side Actions (Desktop) - 靠右 */}
+          <div className="hidden md:flex items-center gap-3">
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
