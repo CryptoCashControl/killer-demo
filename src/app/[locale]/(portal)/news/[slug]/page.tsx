@@ -254,14 +254,33 @@ export default async function NewsDetailPage({ params }: NewsPageProps) {
                         {children}
                       </em>
                     ),
-                    a: ({node, children, ...props}) => (
-                      <a
-                        className="text-gray-900 dark:text-white underline decoration-gray-900 dark:decoration-white underline-offset-2 hover:opacity-70 transition-opacity"
-                        {...props}
-                      >
-                        {children}
-                      </a>
-                    ),
+                    a: ({node, children, ...props}) => {
+                      const href = props.href || '';
+                      // Check if it's an internal link (starts with /)
+                      const isInternal = href.startsWith('/') && !href.startsWith('//');
+
+                      if (isInternal) {
+                        // Add language prefix to internal links
+                        const localizedHref = `/${language}${href}`;
+                        return (
+                          <Link
+                            href={localizedHref}
+                            className="text-gray-900 dark:text-white underline decoration-gray-900 dark:decoration-white underline-offset-2 hover:opacity-70 transition-opacity"
+                          >
+                            {children}
+                          </Link>
+                        );
+                      }
+
+                      return (
+                        <a
+                          className="text-gray-900 dark:text-white underline decoration-gray-900 dark:decoration-white underline-offset-2 hover:opacity-70 transition-opacity"
+                          {...props}
+                        >
+                          {children}
+                        </a>
+                      );
+                    },
                     blockquote: ({node, children, ...props}) => (
                       <blockquote
                         className="border-l-4 border-gray-900 dark:border-white pl-6 pr-6 py-2 my-8 italic text-[21px] leading-[32px] text-gray-700 dark:text-gray-300"

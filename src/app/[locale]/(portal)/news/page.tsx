@@ -1,7 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { getServerLanguage } from '@/lib/getServerLanguage';
 import NewsPageClient from './NewsPageClient';
 
 interface NewsItem {
@@ -12,6 +11,12 @@ interface NewsItem {
   source: string;
   category: string;
   keywords: string[];
+}
+
+interface NewsPageProps {
+  params: Promise<{
+    locale: string;
+  }>;
 }
 
 async function getAllNews(language: 'zh' | 'en'): Promise<NewsItem[]> {
@@ -52,8 +57,9 @@ async function getAllNews(language: 'zh' | 'en'): Promise<NewsItem[]> {
   return allNews;
 }
 
-export default async function NewsPage() {
-  const language = await getServerLanguage();
+export default async function NewsPage({ params }: NewsPageProps) {
+  const { locale } = await params;
+  const language = locale === 'en' ? 'en' : 'zh';
   const allNews = await getAllNews(language);
 
   return <NewsPageClient initialNews={allNews} />;
