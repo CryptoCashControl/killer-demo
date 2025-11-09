@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const riskRewardContent = {
   zh: {
-    title: '风险回报比详解 - R:R计算、最优比例与期望值优化完整指南 | FX Killer',
+    title: '风险回报比详解 - R:R计算、最优比例与期望值优化完整指南 | CC Killer',
     description: '深入讲解外汇交易风险回报比核心知识：R:R计算公式、盈亏比与胜率关系、期望值计算、目标设定策略、最优比例选择。职业交易员分享实战盈亏比优化技巧，助你实现长期稳定盈利。',
     keywords: '风险回报比, 盈亏比, R:R比例, 期望值, 胜率平衡, 目标设定, 风险收益比, 交易数学',
 
@@ -84,7 +84,7 @@ export const riskRewardContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Risk-Reward Ratio Guide - R:R Calculation, Optimal Ratios & Expectancy Optimization | FX Killer',
+    title: 'Risk-Reward Ratio Guide - R:R Calculation, Optimal Ratios & Expectancy Optimization | CC Killer',
     description: 'Comprehensive guide to forex risk-reward ratio: R:R calculation formula, profit/loss ratio and win rate relationship, expectancy calculation, target setting strategies, optimal ratio selection. Professional trader shares practical R:R optimization techniques for long-term stable profitability.',
     keywords: 'risk reward ratio, profit loss ratio, R:R ratio, expectancy, win rate balance, target setting, risk return ratio, trading mathematics',
 

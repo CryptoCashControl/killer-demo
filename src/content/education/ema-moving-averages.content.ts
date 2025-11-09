@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const emaMovingAveragesContent = {
   zh: {
-    title: 'EMA指数移动平均线完整指南 - EMA交易策略与实战技巧 | FX Killer',
+    title: 'EMA指数移动平均线完整指南 - EMA交易策略与实战技巧 | CC Killer',
     description: '深入讲解EMA指数移动平均线：计算公式、与SMA的区别、常用周期(8, 21, 55, 200)。掌握EMA均线交叉策略、动态支撑阻力和多周期共振分析。',
     keywords: 'EMA均线, 指数移动平均线, EMA策略, 均线交叉, SMA vs EMA, 技术分析指标, 趋势指标',
 
@@ -70,7 +70,7 @@ export const emaMovingAveragesContent = {
     ],
 
     ctaTitle: '想要系统学习技术分析？',
-    ctaDescription: '加入 FX Killer 培训计划，掌握更多实战技术指标应用',
+    ctaDescription: '加入 CC Killer 培训计划，掌握更多实战技术指标应用',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const emaMovingAveragesContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete EMA Guide - Exponential Moving Average Strategies and Techniques | FX Killer',
+    title: 'Complete EMA Guide - Exponential Moving Average Strategies and Techniques | CC Killer',
     description: 'In-depth explanation of Exponential Moving Average: calculation formulas, differences from SMA, common periods (8, 21, 55, 200). Master EMA crossover strategies, dynamic support/resistance, and multi-timeframe analysis.',
     keywords: 'EMA, exponential moving average, EMA strategy, moving average crossover, SMA vs EMA, technical analysis, trend indicator',
 
@@ -149,7 +149,7 @@ export const emaMovingAveragesContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Technical Analysis?',
-    ctaDescription: 'Join FX Killer training to master more practical technical indicator applications',
+    ctaDescription: 'Join CC Killer training to master more practical technical indicator applications',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

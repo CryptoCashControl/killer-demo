@@ -32,7 +32,7 @@ export default function PageLoader() {
     };
   }, []);
 
-  const text = "汇刃 FxKiller";
+  const text = "军刀 FxKiller";
   const chars = text.split("");
   const textColor = isDark ? "#ffffff" : "#000000";
 

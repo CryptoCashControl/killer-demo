@@ -1155,7 +1155,7 @@ export default async function PositionSizingPage({ params }: { params: Promise<{
               </p>
               <ul className="space-y-2">
                 <li>
-                  <strong>{isZh ? '1. FX Killer Position Calculator：' : '1. FX Killer Position Calculator:'}</strong>{' '}
+                  <strong>{isZh ? '1. CC Killer Position Calculator：' : '1. CC Killer Position Calculator:'}</strong>{' '}
                   {isZh
                     ? '输入账户、风险%、止损点数，自动计算手数。支持所有货币对，自动获取实时每点价值。'
                     : 'Input account, risk %, stop pips, auto-calculate lot size. Supports all pairs, auto-fetch real-time pip values.'}

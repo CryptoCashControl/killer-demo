@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const riskManagementContent = {
   zh: {
-    title: '外汇风险管理基础 - 仓位控制与资金管理完整指南 | FX Killer',
+    title: '外汇风险管理基础 - 仓位控制与资金管理完整指南 | CC Killer',
     description: '深入讲解外汇交易风险管理核心知识：2%规则、风险回报比、仓位控制、最大回撤、风险承受能力评估。专业交易员分享实战风险管理策略，助你长期稳定盈利。',
     keywords: '风险管理, 仓位控制, 资金管理, 止损设置, 风险回报比, 2%规则, 最大回撤, 外汇风险管理',
 
@@ -73,7 +73,7 @@ export const riskManagementContent = {
     ],
 
     ctaTitle: '想要系统学习风险管理？',
-    ctaDescription: '加入 FX Killer 培训计划，获取专业风险管理工具和一对一指导',
+    ctaDescription: '加入 CC Killer 培训计划，获取专业风险管理工具和一对一指导',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -84,7 +84,7 @@ export const riskManagementContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Forex Risk Management Fundamentals - Complete Position Sizing & Money Management Guide | FX Killer',
+    title: 'Forex Risk Management Fundamentals - Complete Position Sizing & Money Management Guide | CC Killer',
     description: 'Comprehensive guide to forex risk management: 2% rule, risk-reward ratio, position sizing, maximum drawdown, risk tolerance assessment. Professional trader shares practical risk management strategies for long-term success.',
     keywords: 'risk management, position sizing, money management, stop loss, risk reward ratio, 2% rule, maximum drawdown, forex risk management',
 
@@ -155,7 +155,7 @@ export const riskManagementContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Risk Management?',
-    ctaDescription: 'Join FX Killer training program for professional risk management tools and one-on-one guidance',
+    ctaDescription: 'Join CC Killer training program for professional risk management tools and one-on-one guidance',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Assessment',
 

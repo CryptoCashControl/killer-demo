@@ -34,14 +34,6 @@ export default function UnifiedNavbar() {
       ]
     },
     {
-      name: language === 'zh' ? '新闻' : 'News',
-      link: "/news",
-    },
-    {
-      name: language === 'zh' ? '行情' : 'Market',
-      link: "/market-analysis",
-    },
-    {
       name: t('nav.blog'),
       link: "/splan/blog",
     },

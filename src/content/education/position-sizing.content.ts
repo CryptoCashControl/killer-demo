@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const positionSizingContent = {
   zh: {
-    title: '仓位控制与资金管理 - 凯利公式与动态仓位调整策略 | FX Killer',
+    title: '仓位控制与资金管理 - 凯利公式与动态仓位调整策略 | CC Killer',
     description: '深入讲解外汇交易仓位控制核心方法：固定比例法、凯利公式、ATR动态调整、最大回撤控制。职业交易员分享实战仓位管理技巧，助你优化资金利用率并控制风险。',
     keywords: '仓位控制, 资金管理, 凯利公式, 固定比例法, 动态仓位, ATR仓位, 最大回撤, 外汇仓位管理',
 
@@ -73,7 +73,7 @@ export const positionSizingContent = {
     ],
 
     ctaTitle: '想要优化你的仓位管理？',
-    ctaDescription: '使用 FX Killer 专业仓位计算工具，实现自动化风险控制',
+    ctaDescription: '使用 CC Killer 专业仓位计算工具，实现自动化风险控制',
     ctaPrimaryButton: '免费使用工具',
     ctaSecondaryButton: '了解培训计划',
 
@@ -84,7 +84,7 @@ export const positionSizingContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Position Sizing & Money Management - Kelly Criterion & Dynamic Position Strategies | FX Killer',
+    title: 'Position Sizing & Money Management - Kelly Criterion & Dynamic Position Strategies | CC Killer',
     description: 'Comprehensive guide to forex position sizing methods: fixed fractional, Kelly Criterion, ATR dynamic adjustment, maximum drawdown control. Professional trader shares practical position management techniques to optimize capital efficiency and control risk.',
     keywords: 'position sizing, money management, Kelly Criterion, fixed fractional, dynamic position, ATR position, maximum drawdown, forex position management',
 
@@ -155,7 +155,7 @@ export const positionSizingContent = {
     ],
 
     ctaTitle: 'Want to Optimize Your Position Management?',
-    ctaDescription: 'Use FX Killer professional position calculation tools for automated risk control',
+    ctaDescription: 'Use CC Killer professional position calculation tools for automated risk control',
     ctaPrimaryButton: 'Use Tools Free',
     ctaSecondaryButton: 'Learn About Training',
 

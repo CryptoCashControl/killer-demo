@@ -14,7 +14,7 @@ export default function Pricing() {
   return (
     <div className="w-full p-1" id="pricing">
       <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-10 mb-10 relative z-20 py-10 text-black dark:text-white">
-        立即加入 FX Killer <br /> 获得 <Cover>专业成长</Cover>
+        立即加入 CC Killer <br /> 获得 <Cover>专业成长</Cover>
       </h1>
       <div className="pl-15 pr-15">
         <div className="flex flex-col md:flex-row items-center w-full gap-2">

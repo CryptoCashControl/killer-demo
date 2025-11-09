@@ -1,10 +1,10 @@
 ---
 title: "GBP/USD hovers around 1.3150 as US shutdown dampens households’ sentiment"
 date: "2025-11-09 05:39:59"
-description: "GBP/USD clings to minimal gains on Friday amid the lack of economic data releases in the UK, as markets digest scarce ec. Free forex trading training by FX Killer."
-keywords: ["forex","trading","market analysis","forex news","forex training","trader incubation","FX Killer"]
+description: "GBP/USD clings to minimal gains on Friday amid the lack of economic data releases in the UK, as markets digest scarce ec. Free forex trading training by CC Killer."
+keywords: ["forex","trading","market analysis","forex news","forex training","trader incubation","CC Killer"]
 category: "Forex News"
-source: "FX Killer Analysis Team"
+source: "CC Killer Analysis Team"
 language: "en"
 ---
 
@@ -14,15 +14,15 @@ As the US shutdown continues to impact households' sentiment, traders are closel
 
 ---
 
-#### About FX Killer Trader Incubation Program
+#### About CC Killer Trader Incubation Program
 
-Want to become a professional trader? FX Killer offers a **completely free** professional trader training program. We provide systematic courses, practical training, and professional mentorship to help you grow from beginner to full-time trader.
+Want to become a professional trader? CC Killer offers a **completely free** professional trader training program. We provide systematic courses, practical training, and professional mentorship to help you grow from beginner to full-time trader.
 
 👉 [Join Free Training Program](/splan/join-us) | [Trading Psychology Assessment](/splan/psychology-test)
 
 ---
 
-**Data Source**: FX Killer Analysis Team
+**Data Source**: CC Killer Analysis Team
 **Updated**: 2025-11-09 05:39
 
 **Disclaimer**: This article is for reference only and does not constitute investment advice. Forex trading involves risks; please make decisions carefully.

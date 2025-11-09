@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const tradingPsychologyContent = {
   zh: {
-    title: '交易心理学 - 克服恐惧贪婪FOMO，建立交易纪律与情绪管理体系 | FX Killer',
+    title: '交易心理学 - 克服恐惧贪婪FOMO，建立交易纪律与情绪管理体系 | CC Killer',
     description: '深入讲解外汇交易心理学核心知识：恐惧贪婪心理、FOMO、过度交易、报复性交易、交易纪律、压力管理、交易日志。职业交易员分享实战心理调控技巧，助你克服心理陷阱实现稳定盈利。',
     keywords: '交易心理学, 交易心理, 情绪管理, 交易纪律, FOMO, 贪婪恐惧, 过度交易, 报复性交易, 交易日志',
 
@@ -73,7 +73,7 @@ export const tradingPsychologyContent = {
     ],
 
     ctaTitle: '想要系统提升交易心理？',
-    ctaDescription: '加入 FX Killer 交易心理培训，获取专业心理评估和一对一心理辅导',
+    ctaDescription: '加入 CC Killer 交易心理培训，获取专业心理评估和一对一心理辅导',
     ctaPrimaryButton: '免费心理测评',
     ctaSecondaryButton: '了解培训计划',
 
@@ -84,7 +84,7 @@ export const tradingPsychologyContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Trading Psychology - Overcome Fear Greed FOMO, Build Discipline & Emotional Management | FX Killer',
+    title: 'Trading Psychology - Overcome Fear Greed FOMO, Build Discipline & Emotional Management | CC Killer',
     description: 'Comprehensive guide to forex trading psychology: fear and greed psychology, FOMO, overtrading, revenge trading, trading discipline, stress management, trading journal. Professional trader shares practical psychological control techniques to overcome mental traps and achieve stable profitability.',
     keywords: 'trading psychology, trading mindset, emotional management, trading discipline, FOMO, fear greed, overtrading, revenge trading, trading journal',
 
@@ -155,7 +155,7 @@ export const tradingPsychologyContent = {
     ],
 
     ctaTitle: 'Want to Systematically Improve Trading Psychology?',
-    ctaDescription: 'Join FX Killer trading psychology training for professional psychological assessment and one-on-one counseling',
+    ctaDescription: 'Join CC Killer trading psychology training for professional psychological assessment and one-on-one counseling',
     ctaPrimaryButton: 'Free Psychology Assessment',
     ctaSecondaryButton: 'Learn About Training',
 

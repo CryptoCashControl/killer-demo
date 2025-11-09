@@ -8,7 +8,7 @@ export default function PartnerBrokersPage() {
   const { language } = useLanguage();
   const isZh = language === 'zh';
 
-  // Partner broker data - real FX Killer partners
+  // Partner broker data - real CC Killer partners
   const brokers = [
     {
       id: 'ec-markets',
@@ -87,7 +87,7 @@ export default function PartnerBrokersPage() {
               {isZh ? 'FX KILLER 合作伙伴' : 'FX KILLER PARTNERS'}
             </div>
             <h1 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
-              {isZh ? 'FX Killer 合作经纪商' : 'FX Killer Partner Brokers'}
+              {isZh ? 'CC Killer 合作经纪商' : 'CC Killer Partner Brokers'}
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-300 dark:text-gray-700">
               {isZh
@@ -107,8 +107,8 @@ export default function PartnerBrokersPage() {
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               {isZh
-                ? 'FX Killer只推荐满足以下所有标准的经纪商，为您的交易安全保驾护航'
-                : 'FX Killer only recommends brokers meeting all the following criteria, safeguarding your trading security'}
+                ? 'CC Killer只推荐满足以下所有标准的经纪商，为您的交易安全保驾护航'
+                : 'CC Killer only recommends brokers meeting all the following criteria, safeguarding your trading security'}
             </p>
           </div>
 
@@ -140,8 +140,8 @@ export default function PartnerBrokersPage() {
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               {isZh
-                ? '以下经纪商均经过FX Killer团队严格审核，符合我们的所有筛选标准'
-                : 'All brokers below have been rigorously vetted by the FX Killer team and meet all our selection criteria'}
+                ? '以下经纪商均经过CC Killer团队严格审核，符合我们的所有筛选标准'
+                : 'All brokers below have been rigorously vetted by the CC Killer team and meet all our selection criteria'}
             </p>
           </div>
 
@@ -242,8 +242,8 @@ export default function PartnerBrokersPage() {
                   <span className="font-bold mt-0.5">•</span>
                   <span>
                     {isZh
-                      ? 'FX Killer可能从部分推荐链接中获得佣金，但这不影响我们的筛选标准。'
-                      : 'FX Killer may receive commission from some referral links, but this does not affect our selection criteria.'}
+                      ? 'CC Killer可能从部分推荐链接中获得佣金，但这不影响我们的筛选标准。'
+                      : 'CC Killer may receive commission from some referral links, but this does not affect our selection criteria.'}
                   </span>
                 </li>
               </ul>

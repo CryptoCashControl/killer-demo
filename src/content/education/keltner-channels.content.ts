@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const keltnerChannelsContent = {
   zh: {
-    title: '肯特纳通道指标完整指南 - Keltner Channels交易策略与实战技巧 | FX Killer',
+    title: '肯特纳通道指标完整指南 - Keltner Channels交易策略与实战技巧 | CC Killer',
     description: '深入讲解肯特纳通道（Keltner Channels）指标：计算公式、参数设置、与布林带的区别。结合实战案例，掌握KC指标在外汇交易中的突破策略和趋势跟踪应用。',
     keywords: '肯特纳通道, Keltner Channels, KC指标, 肯特纳通道策略, ATR通道, 技术分析指标, 波动性指标',
 
@@ -70,7 +70,7 @@ export const keltnerChannelsContent = {
     ],
 
     ctaTitle: '想要系统学习技术分析？',
-    ctaDescription: '加入 FX Killer 培训计划，掌握更多实战技术指标应用',
+    ctaDescription: '加入 CC Killer 培训计划，掌握更多实战技术指标应用',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const keltnerChannelsContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Keltner Channels Guide - KC Trading Strategies and Practical Techniques | FX Killer',
+    title: 'Complete Keltner Channels Guide - KC Trading Strategies and Practical Techniques | CC Killer',
     description: 'In-depth explanation of Keltner Channels indicator: calculation formulas, parameter settings, differences from Bollinger Bands. Master KC breakout strategies and trend following in forex trading.',
     keywords: 'Keltner Channels, KC indicator, KC strategy, ATR channels, technical analysis, volatility indicator',
 
@@ -149,7 +149,7 @@ export const keltnerChannelsContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Technical Analysis?',
-    ctaDescription: 'Join FX Killer training to master more practical technical indicator applications',
+    ctaDescription: 'Join CC Killer training to master more practical technical indicator applications',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

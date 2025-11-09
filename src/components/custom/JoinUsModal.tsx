@@ -61,7 +61,7 @@ export default function JoinUsModal({ isOpen, onClose }: JoinUsModalProps) {
                 </h2>
 
                 <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                  欢迎加入 FX Killer 外汇交易员培训！我们致力于培养下一代专业外汇交易员。
+                  欢迎加入 CC Killer 外汇交易员培训！我们致力于培养下一代专业外汇交易员。
                 </p>
 
                 <div className="bg-gray-50 dark:bg-gray-900 p-6 mb-6 border border-gray-200 dark:border-gray-700">

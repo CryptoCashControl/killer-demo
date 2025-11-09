@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const swingTradingContent = {
   zh: {
-    title: '波段交易完整指南 - Swing Trading策略与多日持仓技巧 | FX Killer',
+    title: '波段交易完整指南 - Swing Trading策略与多日持仓技巧 | CC Killer',
     description: '深入讲解波段交易（Swing Trading）：H4/D1时间框架分析、趋势识别方法、持仓管理技巧、多日交易策略。掌握波段交易的完整系统和实战案例。',
     keywords: '波段交易, Swing Trading, H4交易, D1交易, 趋势交易, 多日持仓, 波段策略, 外汇波段交易',
 
@@ -70,7 +70,7 @@ export const swingTradingContent = {
     ],
 
     ctaTitle: '想要系统学习波段交易？',
-    ctaDescription: '加入 FX Killer 培训计划，获取专业波段交易策略和中长期趋势分析',
+    ctaDescription: '加入 CC Killer 培训计划，获取专业波段交易策略和中长期趋势分析',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const swingTradingContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Swing Trading Guide - Strategies and Multi-Day Position Techniques | FX Killer',
+    title: 'Complete Swing Trading Guide - Strategies and Multi-Day Position Techniques | CC Killer',
     description: 'In-depth explanation of Swing Trading: H4/D1 timeframe analysis, trend identification methods, position management techniques, multi-day trading strategies. Master complete swing trading system with real cases.',
     keywords: 'swing trading, H4 trading, D1 trading, trend trading, multi-day positions, swing strategy, forex swing trading',
 
@@ -149,7 +149,7 @@ export const swingTradingContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Swing Trading?',
-    ctaDescription: 'Join FX Killer training for professional swing trading strategies and medium-term trend analysis',
+    ctaDescription: 'Join CC Killer training for professional swing trading strategies and medium-term trend analysis',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

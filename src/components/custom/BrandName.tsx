@@ -16,7 +16,7 @@ export default function BrandName() {
     return () => clearTimeout(timer);
   }, []);
 
-  const text = language === 'zh' ? '汇刃' : 'FXKiller';
+  const text = language === 'zh' ? '军刀' : 'CCKiller';
   const chars = text.split('');
 
   return (

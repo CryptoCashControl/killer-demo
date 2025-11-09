@@ -119,7 +119,7 @@ export default function AnimatedText({ className = "", loop = true, delay = 0 }:
         animate="visible"
         key={Math.random()} // 强制重新动画（如果 loop 为 true）
       >
-        {/* 汇刃 */}
+        {/* 军刀 */}
         <div className="flex items-center gap-1">
           {/* 汇 - 整字动画 */}
           <motion.span

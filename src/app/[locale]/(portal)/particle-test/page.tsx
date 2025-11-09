@@ -68,14 +68,14 @@ export default function ParticleTestPage() {
           方案3：粒子动画
         </h2>
 
-        {/* 汇刃动画 */}
+        {/* 军刀动画 */}
         <div className="mb-8">
           <h3 className="text-xl font-bold text-center mb-4 text-black dark:text-white">
-            汇刃
+            军刀
           </h3>
           <div className="w-full h-40 border-2 border-black dark:border-white bg-gray-50 dark:bg-gray-900">
             <ParticleText
-              text="汇刃"
+              text="军刀"
               fontSize={100}
               color="#000000"
               particleCount={3000}

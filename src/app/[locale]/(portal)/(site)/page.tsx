@@ -118,7 +118,7 @@ const DummyContent = () => {
         </div>
       </div>
 
-      {/* 为什么选择 FX Killer - 增强版 */}
+      {/* 为什么选择 CC Killer - 增强版 */}
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-black dark:text-white">
@@ -181,10 +181,10 @@ const DummyContent = () => {
             <span className="bg-black dark:bg-white text-white dark:text-black px-4 py-2">{t('comparison.vs')}</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* FX Killer */}
+            {/* CC Killer */}
             <div className="bg-white dark:bg-gray-800 p-6 border-l-4 border-black dark:border-white">
               <h4 className="text-xl font-bold mb-4 text-black dark:text-white flex items-center gap-2">
-                <span className="text-2xl"></span> {t('comparison.fxkiller')}
+                <span className="text-2xl"></span> {t('comparison.cckiller')}
               </h4>
               <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                 <li className="flex items-start gap-2">

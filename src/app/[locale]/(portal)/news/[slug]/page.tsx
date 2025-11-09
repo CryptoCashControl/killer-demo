@@ -93,8 +93,8 @@ export async function generateMetadata({ params }: NewsPageProps) {
   }
 
   return generateBilingualMetadata(
-    newsZh.title + ' - FX Killer',
-    newsEn.title + ' - FX Killer',
+    newsZh.title + ' - CC Killer',
+    newsEn.title + ' - CC Killer',
     newsZh.description,
     newsEn.description,
     newsZh.keywords.join(', '),

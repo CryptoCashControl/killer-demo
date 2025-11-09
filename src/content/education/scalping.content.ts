@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const scalpingContent = {
   zh: {
-    title: '剥头皮交易完整指南 - Scalping超短线策略与快速执行技巧 | FX Killer',
+    title: '剥头皮交易完整指南 - Scalping超短线策略与快速执行技巧 | CC Killer',
     description: '深入讲解剥头皮交易（Scalping）：M1/M5超短线分析、快速入场出场、点差成本控制、执行速度优化。掌握专业剥头皮交易的完整系统。',
     keywords: '剥头皮交易, Scalping, M1交易, M5交易, 超短线交易, 快速交易, 剥头皮策略, 外汇剥头皮',
 
@@ -70,7 +70,7 @@ export const scalpingContent = {
     ],
 
     ctaTitle: '想要学习专业交易策略？',
-    ctaDescription: '加入 FX Killer 培训计划，从基础策略开始系统学习',
+    ctaDescription: '加入 CC Killer 培训计划，从基础策略开始系统学习',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const scalpingContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Scalping Guide - Ultra-Short-Term Strategies and Fast Execution | FX Killer',
+    title: 'Complete Scalping Guide - Ultra-Short-Term Strategies and Fast Execution | CC Killer',
     description: 'In-depth explanation of Scalping: M1/M5 ultra-short analysis, rapid entry/exit, spread cost control, execution speed optimization. Master professional scalping complete system.',
     keywords: 'scalping, M1 trading, M5 trading, ultra-short-term trading, fast trading, scalping strategy, forex scalping',
 
@@ -149,7 +149,7 @@ export const scalpingContent = {
     ],
 
     ctaTitle: 'Want to Learn Professional Trading Strategies?',
-    ctaDescription: 'Join FX Killer training to systematically learn from foundational strategies',
+    ctaDescription: 'Join CC Killer training to systematically learn from foundational strategies',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

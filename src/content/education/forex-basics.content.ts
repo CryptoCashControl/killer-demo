@@ -50,7 +50,7 @@ export interface EducationPageContent {
 
 export const forexBasicsContent = {
   zh: {
-    title: '外汇交易基础知识完整指南 - 从零开始学习外汇交易 | FX Killer',
+    title: '外汇交易基础知识完整指南 - 从零开始学习外汇交易 | CC Killer',
     description: '完整的外汇交易入门教程，涵盖外汇市场基础、交易术语、技术分析、风险管理等核心知识。适合零基础新手，由职业交易员编写，助你快速掌握外汇交易essentials。',
     keywords: '外汇交易基础, 外汇入门, 外汇教程, 外汇市场, 外汇交易知识, 新手学外汇, FX交易教程',
 
@@ -118,7 +118,7 @@ export const forexBasicsContent = {
     ],
 
     ctaTitle: '准备开始你的外汇交易之旅？',
-    ctaDescription: '加入 FX Killer 30天系统化培训，从零基础到职业交易员',
+    ctaDescription: '加入 CC Killer 30天系统化培训，从零基础到职业交易员',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -129,7 +129,7 @@ export const forexBasicsContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Guide to Forex Trading Basics - Learn Forex from Scratch | FX Killer',
+    title: 'Complete Guide to Forex Trading Basics - Learn Forex from Scratch | CC Killer',
     description: 'Comprehensive forex trading tutorial covering market basics, trading terminology, technical analysis, and risk management. Perfect for beginners, written by professional traders.',
     keywords: 'forex trading basics, forex tutorial, forex for beginners, currency trading, FX trading guide, learn forex',
 
@@ -197,7 +197,7 @@ export const forexBasicsContent = {
     ],
 
     ctaTitle: 'Ready to Start Your Forex Trading Journey?',
-    ctaDescription: 'Join FX Killer 30-day systematic training, from beginner to professional trader',
+    ctaDescription: 'Join CC Killer 30-day systematic training, from beginner to professional trader',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

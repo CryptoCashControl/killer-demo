@@ -42,7 +42,7 @@ export function generateBilingualMetadata(
   const title = language === 'zh' ? zhTitle : enTitle;
   const description = language === 'zh' ? zhDescription : enDescription;
   const keywords = language === 'zh' ? zhKeywords : enKeywords;
-  const baseUrl = 'https://fxkiller.com';
+  const baseUrl = 'https://cckiller.com';
   const locale = language === 'zh' ? 'zh' : 'en';
   const url = options?.url || '';
 
@@ -50,9 +50,9 @@ export function generateBilingualMetadata(
     title,
     description,
     keywords: keywords.split(',').map(k => k.trim()),
-    authors: options?.author ? [{ name: options.author }] : [{ name: 'FX Killer Team' }],
-    creator: 'FX Killer',
-    publisher: 'FX Killer',
+    authors: options?.author ? [{ name: options.author }] : [{ name: 'CC Killer Team' }],
+    creator: 'CC Killer',
+    publisher: 'CC Killer',
     category: options?.section || 'education',
     alternates: url ? {
       canonical: `${baseUrl}/${locale}${url}`,
@@ -68,7 +68,7 @@ export function generateBilingualMetadata(
       locale: language === 'zh' ? 'zh_CN' : 'en_US',
       alternateLocale: language === 'zh' ? ['en_US'] : ['zh_CN'],
       url: url ? `${baseUrl}/${locale}${url}` : undefined,
-      siteName: 'FX Killer | 汇刃',
+      siteName: 'CC Killer | 军刀',
       images: options?.image ? [{
         url: options.image,
         width: 1200,
@@ -78,13 +78,13 @@ export function generateBilingualMetadata(
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'FX Killer - Professional FX Trader Training Platform',
+        alt: 'CC Killer - Professional FX Trader Training Platform',
       }],
       ...(options?.type === 'article' && {
         publishedTime: options.publishedTime,
         modifiedTime: options.modifiedTime,
         section: options.section,
-        authors: options?.author ? [options.author] : ['FX Killer Team'],
+        authors: options?.author ? [options.author] : ['CC Killer Team'],
       }),
     },
     twitter: {

@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const breakoutTradingContent = {
   zh: {
-    title: '突破交易完整指南 - Breakout Trading策略与假突破识别 | FX Killer',
+    title: '突破交易完整指南 - Breakout Trading策略与假突破识别 | CC Killer',
     description: '深入讲解突破交易（Breakout Trading）：支撑阻力突破、成交量确认、假突破识别技巧、突破入场时机。掌握专业突破交易的完整系统。',
     keywords: '突破交易, Breakout Trading, 支撑阻力, 假突破, 成交量确认, 突破策略, 区间突破, 趋势突破',
 
@@ -70,7 +70,7 @@ export const breakoutTradingContent = {
     ],
 
     ctaTitle: '想要系统学习突破交易？',
-    ctaDescription: '加入 FX Killer 培训计划，获取专业突破交易策略和实时信号',
+    ctaDescription: '加入 CC Killer 培训计划，获取专业突破交易策略和实时信号',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const breakoutTradingContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Breakout Trading Guide - Strategies and False Breakout Identification | FX Killer',
+    title: 'Complete Breakout Trading Guide - Strategies and False Breakout Identification | CC Killer',
     description: 'In-depth explanation of Breakout Trading: support/resistance breaks, volume confirmation, false breakout identification, breakout entry timing. Master professional breakout trading complete system.',
     keywords: 'breakout trading, support resistance, false breakout, volume confirmation, breakout strategy, range breakout, trend breakout',
 
@@ -149,7 +149,7 @@ export const breakoutTradingContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Breakout Trading?',
-    ctaDescription: 'Join FX Killer training for professional breakout strategies and real-time signals',
+    ctaDescription: 'Join CC Killer training for professional breakout strategies and real-time signals',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

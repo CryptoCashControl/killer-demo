@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const tradingSessionsContent = {
   zh: {
-    title: '外汇交易时段完整指南 - 全球外汇市场交易时间解析 | FX Killer',
+    title: '外汇交易时段完整指南 - 全球外汇市场交易时间解析 | CC Killer',
     description: '深入解析全球外汇市场四大交易时段：悉尼、东京、伦敦、纽约。掌握最佳交易时间窗口、主要货币对活跃时段、市场流动性分布，助你选择最优交易时机。',
     keywords: '外汇交易时段, 外汇交易时间, 伦敦交易时段, 纽约交易时段, 东京交易时段, 最佳交易时间, 外汇市场开盘时间',
 
@@ -70,7 +70,7 @@ export const tradingSessionsContent = {
     ],
 
     ctaTitle: '想要系统学习时段交易策略？',
-    ctaDescription: '加入 FX Killer 培训计划，获取实时市场分析和专业指导',
+    ctaDescription: '加入 CC Killer 培训计划，获取实时市场分析和专业指导',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const tradingSessionsContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Guide to Forex Trading Sessions - Global Market Hours Explained | FX Killer',
+    title: 'Complete Guide to Forex Trading Sessions - Global Market Hours Explained | CC Killer',
     description: 'In-depth analysis of the four major forex trading sessions: Sydney, Tokyo, London, and New York. Master optimal trading windows, currency pair activity, and market liquidity patterns.',
     keywords: 'forex trading sessions, forex market hours, London session, New York session, Tokyo session, best trading times, forex market opening hours',
 
@@ -149,7 +149,7 @@ export const tradingSessionsContent = {
     ],
 
     ctaTitle: 'Want to Master Session-Based Trading?',
-    ctaDescription: 'Join FX Killer training for real-time market analysis and professional guidance',
+    ctaDescription: 'Join CC Killer training for real-time market analysis and professional guidance',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

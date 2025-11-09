@@ -3,11 +3,11 @@ import LocaleLink from '@/components/navigation/LocaleLink';
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: '外汇市场参与者完整指南 - 了解市场主要玩家 | FX Killer',
+  title: '外汇市场参与者完整指南 - 了解市场主要玩家 | CC Killer',
   description: '深入了解外汇市场的所有参与者：中央银行、商业银行、对冲基金、零售交易者、做市商等。掌握不同参与者的角色、交易策略及其对市场的影响力，提升交易认知。',
   keywords: '外汇市场参与者, 中央银行外汇干预, 对冲基金交易策略, 零售交易者, 做市商, 外汇市场结构, 机构交易员',
   openGraph: {
-    title: '外汇市场参与者完整指南 - 了解市场主要玩家 | FX Killer',
+    title: '外汇市场参与者完整指南 - 了解市场主要玩家 | CC Killer',
     description: '全面解析外汇市场生态系统，了解各类参与者的角色和影响力。',
     type: 'article',
     locale: 'zh_CN',
@@ -679,7 +679,7 @@ export default function MarketParticipantsPage() {
               <div className="border-2 border-black dark:border-white p-5">
                 <h4 className="text-lg font-bold mb-2 text-black dark:text-white">1. 系统化学习与训练</h4>
                 <p className="text-gray-700 dark:text-gray-300 mb-2">
-                  成功交易者都经历了<strong className="text-black dark:text-white">至少6-12个月的系统化学习</strong>，包括理论学习、模拟交易、小额实盘练习。FX Killer的30天培训计划可以显著缩短这个过程。
+                  成功交易者都经历了<strong className="text-black dark:text-white">至少6-12个月的系统化学习</strong>，包括理论学习、模拟交易、小额实盘练习。CC Killer的30天培训计划可以显著缩短这个过程。
                 </p>
               </div>
 
@@ -713,9 +713,9 @@ export default function MarketParticipantsPage() {
             </div>
 
             <div className="bg-gray-50 dark:bg-gray-900 border-2 border-black dark:border-white p-6 my-6">
-              <h4 className="text-lg font-bold mb-3 text-black dark:text-white">💡 FX Killer的建议</h4>
+              <h4 className="text-lg font-bold mb-3 text-black dark:text-white">💡 CC Killer的建议</h4>
               <p className="text-gray-700 dark:text-gray-300 mb-0">
-                不要试图在短期内暴富，也不要相信"圣杯"系统或100%胜率的承诺。外汇交易是一项<strong>技能</strong>，需要时间、练习和持续学习。通过FX Killer的系统化培训，你可以大大提高成功概率，但最终成败取决于你的执行力和心理素质。
+                不要试图在短期内暴富，也不要相信"圣杯"系统或100%胜率的承诺。外汇交易是一项<strong>技能</strong>，需要时间、练习和持续学习。通过CC Killer的系统化培训，你可以大大提高成功概率，但最终成败取决于你的执行力和心理素质。
               </p>
             </div>
           </div>
@@ -1020,7 +1020,7 @@ export default function MarketParticipantsPage() {
               想像专业机构交易者一样思考？
             </h2>
             <p className="text-xl mb-8 text-gray-300 dark:text-gray-700">
-              加入 FX Killer 30天系统化培训，学习机构级交易策略和风险管理
+              加入 CC Killer 30天系统化培训，学习机构级交易策略和风险管理
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <LocaleLink

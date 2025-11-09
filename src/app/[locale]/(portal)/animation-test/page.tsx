@@ -56,7 +56,7 @@ export default function AnimationShowcase() {
             </p>
           </div>
           <div className="min-h-[200px] border-2 border-black dark:border-white rounded-lg flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-black">
-            <ModernTextAnimation key={keys.typewriter} text="汇刃 FxKiller" type="typewriter" />
+            <ModernTextAnimation key={keys.typewriter} text="军刀 FxKiller" type="typewriter" />
           </div>
         </div>
 
@@ -71,7 +71,7 @@ export default function AnimationShowcase() {
             </p>
           </div>
           <div className="min-h-[200px] border-2 border-black dark:border-white rounded-lg flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-black">
-            <ModernTextAnimation key={keys.gradient} text="汇刃 FxKiller" type="gradient" />
+            <ModernTextAnimation key={keys.gradient} text="军刀 FxKiller" type="gradient" />
           </div>
         </div>
 
@@ -86,7 +86,7 @@ export default function AnimationShowcase() {
             </p>
           </div>
           <div className="min-h-[200px] border-2 border-black dark:border-white rounded-lg flex items-center justify-center p-8 bg-black dark:bg-gray-950">
-            <ModernTextAnimation key={keys.glitch} text="汇刃 FxKiller" type="glitch" />
+            <ModernTextAnimation key={keys.glitch} text="军刀 FxKiller" type="glitch" />
           </div>
         </div>
 
@@ -101,7 +101,7 @@ export default function AnimationShowcase() {
             </p>
           </div>
           <div className="min-h-[200px] border-2 border-black dark:border-white rounded-lg flex items-center justify-center p-8 bg-black dark:bg-gray-950">
-            <ModernTextAnimation key={keys.neon} text="汇刃 FxKiller" type="neon" />
+            <ModernTextAnimation key={keys.neon} text="军刀 FxKiller" type="neon" />
           </div>
         </div>
 
@@ -116,7 +116,7 @@ export default function AnimationShowcase() {
             </p>
           </div>
           <div className="min-h-[200px] border-2 border-black dark:border-white rounded-lg flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-black">
-            <ModernTextAnimation key={keys.scale} text="汇刃 FxKiller" type="scale" />
+            <ModernTextAnimation key={keys.scale} text="军刀 FxKiller" type="scale" />
           </div>
         </div>
 
@@ -131,7 +131,7 @@ export default function AnimationShowcase() {
             </p>
           </div>
           <div className="min-h-[200px] border-2 border-black dark:border-white rounded-lg flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-black">
-            <ModernTextAnimation key={keys.split} text="汇刃 FxKiller" type="split" />
+            <ModernTextAnimation key={keys.split} text="军刀 FxKiller" type="split" />
           </div>
         </div>
 

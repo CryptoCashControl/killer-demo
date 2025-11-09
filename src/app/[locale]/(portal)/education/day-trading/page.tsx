@@ -738,8 +738,8 @@ export default async function DayTradingPage({ params }: { params: Promise<{ loc
               </ul>
               <p className="text-sm mt-2">
                 {isZh
-                  ? '实际交易中可开0.6或0.7标准手，或使用FX Killer仓位计算器自动计算。'
-                  : 'In actual trading open 0.6 or 0.7 standard lots, or use FX Killer position calculator for automatic calculation.'}
+                  ? '实际交易中可开0.6或0.7标准手，或使用CC Killer仓位计算器自动计算。'
+                  : 'In actual trading open 0.6 or 0.7 standard lots, or use CC Killer position calculator for automatic calculation.'}
               </p>
             </div>
           </div>

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       url: '/education/forex-basics',
       type: 'article',
       section: 'Forex Education - Basics',
-      author: 'FX Killer Education Team',
+      author: 'CC Killer Education Team',
       publishedTime: '2024-01-15T00:00:00Z',
       modifiedTime: new Date().toISOString(),
     }
@@ -751,7 +751,7 @@ export default async function ForexBasicsPage({ params }: { params: Promise<{ lo
 
           <div className="bg-gray-50 dark:bg-gray-900 border-2 border-black dark:border-white p-8 my-8">
             <h3 className="text-2xl font-bold mb-6 text-black dark:text-white">
-              {isZh ? '🎯 FX Killer 推荐学习路径' : '🎯 FX Killer Recommended Learning Path'}
+              {isZh ? '🎯 CC Killer 推荐学习路径' : '🎯 CC Killer Recommended Learning Path'}
             </h3>
             <div className="space-y-4">
               <div className="flex items-center gap-4">

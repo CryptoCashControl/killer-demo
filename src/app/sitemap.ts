@@ -4,7 +4,7 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://fxkiller.com'
+  const baseUrl = 'https://cckiller.com'
   const lastModified = new Date()
   const languages = ['zh', 'en']
 

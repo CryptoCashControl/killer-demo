@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const candlestickPatternsContent = {
   zh: {
-    title: 'K线形态识别指南 - Doji、Hammer、Engulfing等反转与持续形态详解 | FX Killer',
+    title: 'K线形态识别指南 - Doji、Hammer、Engulfing等反转与持续形态详解 | CC Killer',
     description: '深入讲解外汇K线形态：Doji十字星、Hammer锤子线、Engulfing吞没形态、Morning/Evening Star等。掌握反转形态、持续形态识别技巧，提高交易胜率。',
     keywords: 'K线形态, 蜡烛图, Doji, Hammer, Engulfing, Morning Star, K线识别, 反转形态',
 
@@ -70,7 +70,7 @@ export const candlestickPatternsContent = {
     ],
 
     ctaTitle: '想要系统学习K线形态交易？',
-    ctaDescription: '加入FX Killer培训计划，获取专业K线分析工具和实战指导',
+    ctaDescription: '加入CC Killer培训计划，获取专业K线分析工具和实战指导',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费技术分析工具',
 
@@ -81,7 +81,7 @@ export const candlestickPatternsContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Candlestick Patterns Guide - Doji, Hammer, Engulfing Reversal & Continuation Patterns | FX Killer',
+    title: 'Candlestick Patterns Guide - Doji, Hammer, Engulfing Reversal & Continuation Patterns | CC Killer',
     description: 'In-depth explanation of forex candlestick patterns: Doji, Hammer, Engulfing, Morning/Evening Star, etc. Master reversal and continuation pattern recognition to improve trading win rate.',
     keywords: 'candlestick patterns, Doji, Hammer, Engulfing, Morning Star, candle recognition, reversal patterns',
 
@@ -149,7 +149,7 @@ export const candlestickPatternsContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Candlestick Trading?',
-    ctaDescription: 'Join FX Killer training for professional candlestick analysis tools and practical guidance',
+    ctaDescription: 'Join CC Killer training for professional candlestick analysis tools and practical guidance',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Technical Analysis Tools',
 

@@ -25,7 +25,7 @@ const getFAQData = (language: 'zh' | 'en'): FAQData => {
     return {
       course: [
         {
-          question: '什么是 FX Killer 外汇交易员培训？',
+          question: '什么是 CC Killer 外汇交易员培训？',
           answer: '我们是一个专注于筛选和培养顶尖外汇交易员的专业培训平台。我们致力于用最短的时间从大量人群中筛选出少数适合做交易的人才并进行培养。我们将在<strong> 30个工作日</strong>内判断新人是否是做交易的可塑之才。通过考核者将获得资金支持，成为独立交易员或基金经理。'
         },
         {
@@ -127,7 +127,7 @@ const getFAQData = (language: 'zh' | 'en'): FAQData => {
     return {
       course: [
         {
-          question: 'What is FX Killer Forex Trader Training?',
+          question: 'What is CC Killer Forex Trader Training?',
           answer: 'We are a professional training platform focused on selecting and cultivating elite forex traders. We are committed to identifying, in the shortest time possible, the few individuals from a large population who are suited for trading, and providing them with cultivation. Within <strong>30 working days</strong>, we will determine whether newcomers have the potential to become traders. Those who pass the assessment will receive capital support and become independent traders or fund managers.'
         },
         {

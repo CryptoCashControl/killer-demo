@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const brokerSelectionContent = {
   zh: {
-    title: '外汇经纪商选择完整指南 - 如何识别安全可靠的外汇平台 | FX Killer',
+    title: '外汇经纪商选择完整指南 - 如何识别安全可靠的外汇平台 | CC Killer',
     description: '全面讲解外汇经纪商选择标准：监管资质识别、平台类型对比（MM/STP/ECN）、资金安全保障、交易条件评估。避开黑平台陷阱，选择最适合你的外汇经纪商。',
     keywords: '外汇经纪商, 外汇平台选择, 经纪商监管, 黑平台识别, ECN经纪商, STP经纪商, 外汇平台安全',
 
@@ -64,13 +64,13 @@ export const brokerSelectionContent = {
       {
         href: '/partners/brokers',
         icon: '🤝',
-        title: 'FX Killer合作经纪商',
+        title: 'CC Killer合作经纪商',
         description: '查看我们推荐的受监管经纪商'
       }
     ],
 
     ctaTitle: '寻找可靠的外汇经纪商？',
-    ctaDescription: 'FX Killer只推荐受严格监管、信誉良好的合作经纪商',
+    ctaDescription: 'CC Killer只推荐受严格监管、信誉良好的合作经纪商',
     ctaPrimaryButton: '查看合作经纪商',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const brokerSelectionContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Forex Broker Selection Guide - How to Identify Safe and Reliable Platforms | FX Killer',
+    title: 'Complete Forex Broker Selection Guide - How to Identify Safe and Reliable Platforms | CC Killer',
     description: 'Comprehensive guide to forex broker selection criteria: regulation verification, broker type comparison (MM/STP/ECN), fund security, trading conditions assessment. Avoid scam brokers and choose the best forex platform for you.',
     keywords: 'forex broker, broker selection, forex regulation, scam broker identification, ECN broker, STP broker, forex platform safety',
 
@@ -143,13 +143,13 @@ export const brokerSelectionContent = {
       {
         href: '/partners/brokers',
         icon: '🤝',
-        title: 'FX Killer Partner Brokers',
+        title: 'CC Killer Partner Brokers',
         description: 'View our recommended regulated brokers'
       }
     ],
 
     ctaTitle: 'Looking for Reliable Forex Brokers?',
-    ctaDescription: 'FX Killer only recommends strictly regulated, reputable partner brokers',
+    ctaDescription: 'CC Killer only recommends strictly regulated, reputable partner brokers',
     ctaPrimaryButton: 'View Partner Brokers',
     ctaSecondaryButton: 'Free Psychology Test',
 

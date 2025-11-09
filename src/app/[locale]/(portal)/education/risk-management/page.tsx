@@ -436,8 +436,8 @@ export default async function RiskManagementPage({ params }: { params: Promise<{
             </h3>
             <p className="text-gray-700 dark:text-gray-300">
               {isZh
-                ? '手动计算仓位容易出错，尤其是交叉货币对（如GBP/JPY、EUR/AUD）每点价值不固定。建议使用专业仓位计算器（如FX Killer Position Calculator），只需输入账户、风险%、止损点数，即可自动计算最佳手数，避免计算错误导致的风险失控。'
-                : 'Manual position calculation is error-prone, especially for cross pairs (GBP/JPY, EUR/AUD) with variable pip values. Recommend using professional position calculator (like FX Killer Position Calculator), just input account, risk %, stop pips to automatically calculate optimal lot size, avoiding calculation errors causing risk loss of control.'}
+                ? '手动计算仓位容易出错，尤其是交叉货币对（如GBP/JPY、EUR/AUD）每点价值不固定。建议使用专业仓位计算器（如CC Killer Position Calculator），只需输入账户、风险%、止损点数，即可自动计算最佳手数，避免计算错误导致的风险失控。'
+                : 'Manual position calculation is error-prone, especially for cross pairs (GBP/JPY, EUR/AUD) with variable pip values. Recommend using professional position calculator (like CC Killer Position Calculator), just input account, risk %, stop pips to automatically calculate optimal lot size, avoiding calculation errors causing risk loss of control.'}
             </p>
           </div>
 
@@ -877,8 +877,8 @@ export default async function RiskManagementPage({ params }: { params: Promise<{
             <p className="text-green-600 dark:text-green-400 font-bold">
               ✅ {isZh ? '正确做法：' : 'Solution:'}{' '}
               {isZh
-                ? '了解货币对相关性，避免同时交易高度相关的货币对。如果必须交易，将总风险控制在2-3%内（如每对1%）。建议：同时最多持有2-3个仓位，且选择低相关性货币对（如EUR/USD + GBP/JPY + AUD/NZD）。使用FX Killer的相关性工具识别风险。'
-                : 'Understand currency pair correlation, avoid simultaneously trading highly correlated pairs. If must trade, control total risk within 2-3% (e.g., 1% each). Recommend: hold maximum 2-3 positions simultaneously, choose low-correlation pairs (e.g., EUR/USD + GBP/JPY + AUD/NZD). Use FX Killer correlation tool to identify risks.'}
+                ? '了解货币对相关性，避免同时交易高度相关的货币对。如果必须交易，将总风险控制在2-3%内（如每对1%）。建议：同时最多持有2-3个仓位，且选择低相关性货币对（如EUR/USD + GBP/JPY + AUD/NZD）。使用CC Killer的相关性工具识别风险。'
+                : 'Understand currency pair correlation, avoid simultaneously trading highly correlated pairs. If must trade, control total risk within 2-3% (e.g., 1% each). Recommend: hold maximum 2-3 positions simultaneously, choose low-correlation pairs (e.g., EUR/USD + GBP/JPY + AUD/NZD). Use CC Killer correlation tool to identify risks.'}
             </p>
           </div>
 
@@ -1111,8 +1111,8 @@ export default async function RiskManagementPage({ params }: { params: Promise<{
             </ul>
             <p className="mt-3 text-sm">
               {isZh
-                ? 'FX Killer 提供完整的风险管理工具套件，帮助你实现自动化、系统化的风险控制。'
-                : 'FX Killer provides complete risk management tool suite to help you achieve automated, systematic risk control.'}
+                ? 'CC Killer 提供完整的风险管理工具套件，帮助你实现自动化、系统化的风险控制。'
+                : 'CC Killer provides complete risk management tool suite to help you achieve automated, systematic risk control.'}
             </p>
           </div>
 

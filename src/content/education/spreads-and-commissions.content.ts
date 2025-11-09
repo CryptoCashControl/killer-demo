@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const spreadsCommissionsContent = {
   zh: {
-    title: '外汇点差与佣金完整指南 - 交易成本详解与优化策略 | FX Killer',
+    title: '外汇点差与佣金完整指南 - 交易成本详解与优化策略 | CC Killer',
     description: '全面解析外汇交易成本：点差类型（固定vs浮动）、佣金模式、隐藏费用、以及如何选择低成本经纪商。掌握降低交易成本的实用技巧，提升长期盈利能力。',
     keywords: '外汇点差, 外汇佣金, 交易成本, 固定点差, 浮动点差, ECN账户, STP账户, 外汇经纪商对比',
 
@@ -70,7 +70,7 @@ export const spreadsCommissionsContent = {
     ],
 
     ctaTitle: '想要获得更优质的交易条件？',
-    ctaDescription: 'FX Killer 合作经纪商提供极具竞争力的点差和佣金',
+    ctaDescription: 'CC Killer 合作经纪商提供极具竞争力的点差和佣金',
     ctaPrimaryButton: '查看合作经纪商',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const spreadsCommissionsContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Guide to Forex Spreads and Commissions - Trading Costs Explained | FX Killer',
+    title: 'Complete Guide to Forex Spreads and Commissions - Trading Costs Explained | CC Killer',
     description: 'Comprehensive analysis of forex trading costs: spread types (fixed vs floating), commission models, hidden fees, and how to choose low-cost brokers. Master cost reduction strategies for long-term profitability.',
     keywords: 'forex spreads, forex commissions, trading costs, fixed spread, floating spread, ECN account, STP account, broker comparison',
 
@@ -149,7 +149,7 @@ export const spreadsCommissionsContent = {
     ],
 
     ctaTitle: 'Want Better Trading Conditions?',
-    ctaDescription: 'FX Killer partner brokers offer highly competitive spreads and commissions',
+    ctaDescription: 'CC Killer partner brokers offer highly competitive spreads and commissions',
     ctaPrimaryButton: 'View Partner Brokers',
     ctaSecondaryButton: 'Free Psychology Test',
 

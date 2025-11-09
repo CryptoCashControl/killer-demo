@@ -3,11 +3,11 @@ import LocaleLink from '@/components/navigation/LocaleLink';
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: '货币对分类与特点完整指南 - 主要货币对vs交叉货币对 | FX Killer',
+  title: '货币对分类与特点完整指南 - 主要货币对vs交叉货币对 | CC Killer',
   description: '全面解析外汇市场货币对分类：主要货币对、次要货币对、交叉货币对、异国货币对的特点、波动性、点差对比。选择最适合你的交易货币对，提高交易成功率。',
   keywords: '货币对分类, 主要货币对, 交叉货币对, 异国货币对, EUR/USD, GBP/USD, 货币对点差, 货币对波动性',
   openGraph: {
-    title: '货币对分类与特点完整指南 - 主要货币对vs交叉货币对 | FX Killer',
+    title: '货币对分类与特点完整指南 - 主要货币对vs交叉货币对 | CC Killer',
     description: '深入了解不同货币对的特点、风险和交易策略，选择最适合你的交易品种。',
     type: 'article',
     locale: 'zh_CN',
@@ -821,7 +821,7 @@ export default function CurrencyPairsGuidePage() {
             </div>
 
             <div className="bg-black dark:bg-white text-white dark:text-black p-6 my-6 border-2 border-black dark:border-white">
-              <h4 className="text-lg font-bold mb-3">💡 FX Killer的警告</h4>
+              <h4 className="text-lg font-bold mb-3">💡 CC Killer的警告</h4>
               <p className="mb-3">
                 <strong>异国货币对不适合新手交易者。</strong>即使是经验丰富的交易者，也应谨慎涉足。主要原因：
               </p>
@@ -1062,7 +1062,7 @@ export default function CurrencyPairsGuidePage() {
             </div>
 
             <div className="bg-black dark:bg-white text-white dark:text-black p-6 my-6 border-2 border-black dark:border-white">
-              <h4 className="text-lg font-bold mb-3">🎯 FX Killer推荐的新手货币对组合</h4>
+              <h4 className="text-lg font-bold mb-3">🎯 CC Killer推荐的新手货币对组合</h4>
               <div className="space-y-4">
                 <div>
                   <p className="font-bold mb-2">组合1：保守型</p>
@@ -1282,7 +1282,7 @@ export default function CurrencyPairsGuidePage() {
               想系统学习货币对交易策略？
             </h2>
             <p className="text-xl mb-8 text-gray-300 dark:text-gray-700">
-              加入 FX Killer 30天系统化培训，掌握不同货币对的特性和交易技巧
+              加入 CC Killer 30天系统化培训，掌握不同货币对的特性和交易技巧
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <LocaleLink

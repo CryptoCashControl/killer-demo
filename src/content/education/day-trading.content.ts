@@ -2,7 +2,7 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const dayTradingContent = {
   zh: {
-    title: '日内交易完整指南 - Day Trading策略与风险管理实战技巧 | FX Killer',
+    title: '日内交易完整指南 - Day Trading策略与风险管理实战技巧 | CC Killer',
     description: '深入讲解日内交易（Day Trading）：时间框架选择、入场出场策略、仓位控制、止损设置、交易时段分析。结合实战案例，掌握M5、M15、H1图表的短线交易技巧。',
     keywords: '日内交易, Day Trading, 短线交易, M5交易, M15交易, H1交易, 日内策略, 外汇日内交易',
 
@@ -70,7 +70,7 @@ export const dayTradingContent = {
     ],
 
     ctaTitle: '想要系统学习日内交易？',
-    ctaDescription: '加入 FX Killer 培训计划，获取专业日内交易策略和实时交易指导',
+    ctaDescription: '加入 CC Killer 培训计划，获取专业日内交易策略和实时交易指导',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,7 +81,7 @@ export const dayTradingContent = {
   } as EducationPageContent,
 
   en: {
-    title: 'Complete Day Trading Guide - Strategies and Risk Management Techniques | FX Killer',
+    title: 'Complete Day Trading Guide - Strategies and Risk Management Techniques | CC Killer',
     description: 'In-depth explanation of Day Trading: timeframe selection, entry/exit strategies, position sizing, stop-loss setting, trading session analysis. Master intraday trading on M5, M15, H1 charts with real cases.',
     keywords: 'day trading, intraday trading, M5 trading, M15 trading, H1 trading, day trading strategy, forex day trading',
 
@@ -149,7 +149,7 @@ export const dayTradingContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Day Trading?',
-    ctaDescription: 'Join FX Killer training for professional day trading strategies and live trading guidance',
+    ctaDescription: 'Join CC Killer training for professional day trading strategies and live trading guidance',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

@@ -18,8 +18,8 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations: Record<Language, Record<string, string>> = {
   zh: {
     // 品牌名
-    'brand.name': '汇刃',
-    'brand.full': 'FX Killer',
+    'brand.name': '军刀',
+    'brand.full': 'CC Killer',
 
     // 导航栏
     'nav.home': '首页',
@@ -39,7 +39,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.cta.dashboard': '进入交易系统',
 
     // Why Choose Section
-    'why.title': '为什么选择汇刃',
+    'why.title': '为什么选择军刀',
     'why.subtitle': '专注筛选和培养顶尖外汇交易员，培养真正适合的人，留下极少数，劝返大多数',
 
     // Advantages
@@ -52,7 +52,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Comparison
     'comparison.vs': 'VS 传统外汇培训',
-    'comparison.fxkiller': '汇刃',
+    'comparison.cckiller': '军刀',
     'comparison.traditional': '传统培训机构',
     'comparison.free': '完全免费 - 无任何培训费用',
     'comparison.practical': '实战培养 - 30天系统化职业训练',
@@ -164,7 +164,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact.focus': '专注外汇交易培训',
     'footer.contact.cultivate': '培养职业外汇交易员',
     'footer.contact.apply': '立即申请',
-    'footer.copyright': '© 汇刃 · 专业外汇交易员培训平台 · fxkiller.com',
+    'footer.copyright': '© 军刀 · 专业外汇交易员培训平台 · cckiller.com',
     'footer.disclaimer': ' 外汇交易有风险，投资需谨慎 · 本站内容仅供学习参考，不构成投资建议',
     'footer.partners.title': '合作伙伴',
     'footer.partners.brokers': '合作经纪商',
@@ -176,7 +176,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Join Us Page
     'joinus.hero.badge': 'PROFESSIONAL TRADER TRAINING',
-    'joinus.hero.title1': '汇刃',
+    'joinus.hero.title1': '军刀',
     'joinus.hero.title2': '外汇交易员培训',
     'joinus.hero.subtitle': '培养真正适合的人，留下极少数，劝返大多数',
     'joinus.hero.stat1': '通过率',
@@ -290,7 +290,7 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.hero.desc': '开启职业交易之路前，先读懂这些问题',
     'faq.search.placeholder': '搜索问题...',
     'faq.search.button': '搜索',
-    'faq.category.course': '关于 FX Killer',
+    'faq.category.course': '关于 CC Killer',
     'faq.category.learning': '关于培训',
     'faq.category.pricing': '关于收入与分润',
     'faq.category.support': '交易铁律',
@@ -341,7 +341,7 @@ const translations: Record<Language, Record<string, string>> = {
     'donate.how.step1.title': '完成心理测评',
     'donate.how.step1.desc': '首先完成心理测评，确保您具备成为职业交易员的心理素质',
     'donate.how.step2.title': '发送邮件申请',
-    'donate.how.step2.desc': '邮件至 x.stark.dylan@gmail.com，说明您的意向',
+    'donate.how.step2.desc': '邮件至 123@qq.com，说明您的意向',
     'donate.how.step3.title': '获取捐赠地址',
     'donate.how.step3.desc': '我们将通过邮件回复您具体的 USDT/USDC 捐赠地址',
     'donate.how.step4.title': '完成捐赠并开始培训',
@@ -433,7 +433,7 @@ const translations: Record<Language, Record<string, string>> = {
     'dashboard.tab.tianti': '天梯',
     'dashboard.tab.config': '策略配置',
     'dashboard.footer.warning': ' 仅用于测试环境。实盘交易需要充分测试和风险评估。',
-    'dashboard.footer.copyright': '2024-2025 © FX Killer 专业外汇交易员培训平台',
+    'dashboard.footer.copyright': '2024-2025 © CC Killer 专业外汇交易员培训平台',
 
     // Admin Login
     'login.title': '交易控制台',
@@ -492,13 +492,13 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.backToBlog': '返回博客',
     'blog.relatedPosts': '相关文章',
     'blog.cta.title': '准备开始您的交易之旅？',
-    'blog.cta.subtitle': '加入FX Killer，接受专业的交易员培训',
+    'blog.cta.subtitle': '加入CC Killer，接受专业的交易员培训',
     'blog.cta.button': '立即加入',
   },
   en: {
     // Brand Name
-    'brand.name': 'FX Killer',
-    'brand.full': 'FX Killer',
+    'brand.name': 'CC Killer',
+    'brand.full': 'CC Killer',
 
     // Navigation
     'nav.home': 'Home',
@@ -518,7 +518,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.cta.dashboard': 'Enter Trading System',
 
     // Why Choose Section
-    'why.title': 'Why Choose FX Killer',
+    'why.title': 'Why Choose CC Killer',
     'why.subtitle': 'Focused on selecting and cultivating elite forex traders, nurturing those truly suited, retaining the few, and advising the majority to pursue other paths',
 
     // Advantages
@@ -531,7 +531,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Comparison
     'comparison.vs': 'VS Traditional Forex Training',
-    'comparison.fxkiller': 'FX Killer',
+    'comparison.cckiller': 'CC Killer',
     'comparison.traditional': 'Traditional Training Institutions',
     'comparison.free': 'Completely Free - No Training Fees',
     'comparison.practical': 'Practical Training - 30 Days of Systematic Professional Training',
@@ -643,7 +643,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact.focus': 'Focused on forex training',
     'footer.contact.cultivate': 'Cultivating professional forex traders',
     'footer.contact.apply': 'Apply Now',
-    'footer.copyright': '© FX Killer · Professional Forex Trader Training Platform · fxkiller.com',
+    'footer.copyright': '© CC Killer · Professional Forex Trader Training Platform · cckiller.com',
     'footer.disclaimer': ' Forex trading carries risk, investment requires caution · Site content for learning reference only, not investment advice',
     'footer.partners.title': 'Partners',
     'footer.partners.brokers': 'Partner Brokers',
@@ -655,7 +655,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Join Us Page
     'joinus.hero.badge': 'PROFESSIONAL TRADER TRAINING',
-    'joinus.hero.title1': 'FX Killer',
+    'joinus.hero.title1': 'CC Killer',
     'joinus.hero.title2': 'Forex Trader Training',
     'joinus.hero.subtitle': 'Cultivating those truly suited, retaining the few, advising the majority to pursue other paths',
     'joinus.hero.stat1': 'Pass Rate',
@@ -769,7 +769,7 @@ const translations: Record<Language, Record<string, string>> = {
     'faq.hero.desc': 'Understand these questions before starting your professional trading journey',
     'faq.search.placeholder': 'Search questions...',
     'faq.search.button': 'Search',
-    'faq.category.course': 'About FX Killer',
+    'faq.category.course': 'About CC Killer',
     'faq.category.learning': 'About Training',
     'faq.category.pricing': 'About Income & Profit Share',
     'faq.category.support': 'Trading Iron Laws',
@@ -820,7 +820,7 @@ const translations: Record<Language, Record<string, string>> = {
     'donate.how.step1.title': 'Complete Psychology Test',
     'donate.how.step1.desc': 'First complete the psychology test to ensure you possess the psychological qualities to become a professional trader',
     'donate.how.step2.title': 'Send Email Application',
-    'donate.how.step2.desc': 'Email to x.stark.dylan@gmail.com explaining your intention',
+    'donate.how.step2.desc': 'Email to 123@qq.com explaining your intention',
     'donate.how.step3.title': 'Obtain Donation Address',
     'donate.how.step3.desc': 'We will reply via email with the specific USDT/USDC donation address',
     'donate.how.step4.title': 'Complete Donation and Begin Training',
@@ -912,7 +912,7 @@ const translations: Record<Language, Record<string, string>> = {
     'dashboard.tab.tianti': 'Leaderboard',
     'dashboard.tab.config': 'Strategy Config',
     'dashboard.footer.warning': ' For testing environment only. Live trading requires thorough testing and risk assessment.',
-    'dashboard.footer.copyright': '2024-2025 © FX Killer Professional Forex Trader Training Platform',
+    'dashboard.footer.copyright': '2024-2025 © CC Killer Professional Forex Trader Training Platform',
 
     // Admin Login
     'login.title': 'Trading Dashboard',
@@ -971,7 +971,7 @@ const translations: Record<Language, Record<string, string>> = {
     'blog.backToBlog': 'Back to Blog',
     'blog.relatedPosts': 'Related Posts',
     'blog.cta.title': 'Ready to Start Your Trading Journey?',
-    'blog.cta.subtitle': 'Join FX Killer for professional trader training',
+    'blog.cta.subtitle': 'Join CC Killer for professional trader training',
     'blog.cta.button': 'Join Now',
   }
 };

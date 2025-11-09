@@ -85,10 +85,10 @@ export async function generateMetadata(): Promise<Metadata> {
   const isZh = language === 'zh';
 
   return {
-    title: isZh ? '新闻归档 - FX Killer' : 'News Archive - FX Killer',
+    title: isZh ? '新闻归档 - CC Killer' : 'News Archive - CC Killer',
     description: isZh
-      ? '按月份浏览FX Killer的所有外汇新闻文章归档'
-      : 'Browse all FX Killer forex news articles by month',
+      ? '按月份浏览CC Killer的所有外汇新闻文章归档'
+      : 'Browse all CC Killer forex news articles by month',
   };
 }
 

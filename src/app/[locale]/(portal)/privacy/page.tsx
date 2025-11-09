@@ -73,7 +73,7 @@ export default function PrivacyPolicyPage() {
             "• 要求删除您的个人信息（在某些情况下）",
             "• 反对或限制我们处理您的数据",
             "• 数据可携带权（获取您的数据副本）",
-            "如需行使这些权利，请通过 x.stark.dylan@gmail.com 联系我们。"
+            "如需行使这些权利，请通过 123@qq.com 联系我们。"
           ]
         },
         {
@@ -108,7 +108,7 @@ export default function PrivacyPolicyPage() {
           title: "11. 联系我们",
           content: [
             "如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：",
-            "• 电子邮件：x.stark.dylan@gmail.com",
+            "• 电子邮件：123@qq.com",
             "• 邮件主题：外汇交易员沟通 - 隐私咨询"
           ]
         }
@@ -183,7 +183,7 @@ export default function PrivacyPolicyPage() {
             "• Request deletion of your personal information (in certain cases)",
             "• Object to or restrict our processing of your data",
             "• Data portability (obtain a copy of your data)",
-            "To exercise these rights, please contact us at x.stark.dylan@gmail.com"
+            "To exercise these rights, please contact us at 123@qq.com"
           ]
         },
         {
@@ -218,7 +218,7 @@ export default function PrivacyPolicyPage() {
           title: "11. Contact Us",
           content: [
             "If you have questions or suggestions about this privacy policy, please contact us:",
-            "• Email: x.stark.dylan@gmail.com",
+            "• Email: 123@qq.com",
             "• Subject: Forex Trader Communication - Privacy Inquiry"
           ]
         }
